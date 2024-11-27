@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<title>VSense Biometric - Future-Ready Authentication Solutions</title>
+	<title>VSense Technologies</title>
 	<meta name="description" content="Advanced biometric authentication devices for modern businesses" />
 </svelte:head>
 
