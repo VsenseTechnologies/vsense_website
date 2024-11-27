@@ -9,10 +9,10 @@
 
   <!-- Logo -->
   <img 
-    src="/images/logo.png" 
-    alt="VSense Logo" 
-    class="absolute left-20 w-38 h-40 top-1" 
-  />
+  src="/images/logo.png" 
+  alt="VSense Logo" 
+  class="absolute left-14 sm:left-18 md:left-28 top-0 sm:top-0 md:top-14 w-38 sm:w-38 md:w-38 h-28 sm:h-32 md:h-40"
+/>
 
   <!-- Main content -->
   <div class="container relative z-10">
@@ -21,7 +21,7 @@
       <!-- Left side content -->
       <div class="space-y-8 text-white">
         <div>
-          <h2 class="text-5xl font-bold mb-4">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 mt-24 sm:mt-24 md:mt-32 top-6">
             <span class="text-white">VSense</span> Biometric
           </h2>
           <p class="text-xl text-gray-400">
