@@ -4,7 +4,7 @@
     import Button from '$lib/components/Button.svelte';
     
     const currentVersion = "2.0.0";
-    const downloadUrl = "/downloads/biometricNewVersion.exe";
+    const downloadUrl = "/downloads/biometric.exe";
     
     const specs = [
       "Windows 10/11 Compatible",
