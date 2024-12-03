@@ -33,7 +33,7 @@
 	}
 </script>
 
-<section id="downloads" class="py-20 bg-zinc-900">
+<section id="downloads" class="py-20 bg-black-900">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<SectionTitle title="Downloads" />
 		

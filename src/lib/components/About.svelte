@@ -9,8 +9,8 @@
 
 </script>
 
-<section id="about" class="py-20 bg-zinc-900 relative overflow-hidden">
-	<div class="absolute inset-0 bg-[url('/images/tech-pattern.png')] opacity-5"></div>
+<section id="about" class="py-20 bg-black-900 relative overflow-hidden">
+	<div class="absolute inset-0 bg-black opacity-5"></div>
 	<div class="absolute inset-0 bg-gradient-to-b from-transparent via-zinc-900/50 to-zinc-900"></div>
 	
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
