@@ -1,10 +1,11 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
-	// @ts-ignore
-	import Stats from './About/Stats.svelte';
-	// @ts-ignore
+
+	import Stats from "./About/Stats.svelte";
+
+
 	import Features from './About/Features.svelte';
-	// @ts-ignore
+
 	import Vision from './About/Vision.svelte';
 </script>
 
