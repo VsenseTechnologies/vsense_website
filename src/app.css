@@ -1,0 +1,47 @@
+@import '@fontsource/inter';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--color-primary: #00ff00;
+	--color-primary-dark: #00cc00;
+	--color-bg: #000000;
+	--color-text: #ffffff;
+}
+
+body {
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	font-family: 'Inter', sans-serif;
+}
+
+@layer components {
+	.btn-primary {
+		@apply px-6 py-2 bg-green-500 text-white rounded-md transition-all duration-300 hover:bg-green-600 hover:shadow-lg hover:shadow-green-500/20;
+	}
+
+	.section-title {
+		@apply text-3xl md:text-4xl font-bold mb-8 relative;
+	}
+
+	.section-title::after {
+		content: '';
+		@apply absolute bottom-0 left-0 w-24 h-1 bg-green-500;
+	}
+
+	.card {
+		@apply bg-zinc-900 p-4 md:p-6 rounded-lg shadow-xl transition-all duration-300 hover:shadow-green-500/10;
+	}
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 640px) {
+	.section-title {
+		@apply text-2xl;
+	}
+
+	.btn-primary {
+		@apply w-full;
+	}
+}
