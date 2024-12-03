@@ -1,12 +1,12 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
+	import Vision from './about/Vision.svelte';
+	import Stats from './about/Stats.svelte';
+	import Features from './about/Features.svelte';
 
-	import Stats from "./About/Stats.svelte";
+	
 
 
-	import Features from './About/Features.svelte';
-
-	import Vision from './About/Vision.svelte';
 </script>
 
 <section id="about" class="py-20 bg-zinc-900 relative overflow-hidden">
