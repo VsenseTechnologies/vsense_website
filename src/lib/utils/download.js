@@ -1,5 +1,9 @@
+/**
+ * @param {string | URL | Request} url
+ */
 export function downloadFile(url) {
 	return new Promise((resolve, reject) => {
+		// @ts-ignore
 		const filename = url.split('/').pop();
 		
 		// Verify it's an exe file
@@ -42,6 +46,7 @@ export function downloadFile(url) {
 					document.body.removeChild(a);
 				}, 100);
 				
+				// @ts-ignore
 				resolve();
 			})
 			.catch((error) => {

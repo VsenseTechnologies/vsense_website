@@ -26,7 +26,7 @@
 					<img
 						src={image}
 						alt={`${title} - Image ${i + 1}`}
-						class="w-full h-full object-contain "
+						class="w-full h-full object-contain bg-zinc-900 "
 						in:fade={{ duration: 300 }}
 					/>
 				</div>

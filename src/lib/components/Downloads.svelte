@@ -6,8 +6,14 @@
 
 	let downloading = false;
 	let error = '';
+	/**
+	 * @type {{ name: string; description: string; version: string; size: string; platform: string; fileUrl: string; icon: string; requirements: string; features: string[]; } | null}
+	 */
 	let currentSoftware = null;
 
+	/**
+	 * @param {{ name: string; description: string; version: string; size: string; platform: string; fileUrl: string; icon: string; requirements: string; features: string[]; } | null} software
+	 */
 	async function handleDownload(software) {
 		if (downloading) return;
 		
@@ -15,8 +21,10 @@
 			downloading = true;
 			currentSoftware = software;
 			error = '';
+			// @ts-ignore
 			await downloadFile(software.fileUrl);
 		} catch (err) {
+			// @ts-ignore
 			error = err.message || 'Download failed. Please try again later.';
 		} finally {
 			downloading = false;
