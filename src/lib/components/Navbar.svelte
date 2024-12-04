@@ -26,7 +26,9 @@
 				<a href="#contact" class="btn-primary text-sm lg:text-base">Contact Us</a>
 			</div>
 			
-			<button class="md:hidden p-2" on:click={toggleMenu}>
+			<!-- svelte-ignore a11y_consider_explicit_label -->
+			<button class="md:hidden p-2" on:click={toggleMenu} aria-label="Toggle menu">
+
 				<svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
 				</svg>
