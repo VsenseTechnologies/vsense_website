@@ -1,20 +1,20 @@
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
-	host: 'smtp.example.com', // Replace with your SMTP server
+	host: 'smtp.gmail.com', // Replace with your SMTP server
 	port: 587,
 	secure: false,
 	auth: {
-		user: 'your-email@example.com', // Replace with your email
-		pass: 'your-password' // Replace with your password
+		user: 'sumithsbhatt@gmail.com', // Replace with your email
+		pass: 'bwxhjqihixytxoqi' // Replace with your password
 	}
 });
 
 export async function sendContactNotification(contact) {
 	try {
 		await transporter.sendMail({
-			from: '"VSense Technologies" <your-email@example.com>',
-			to: 'admin@vsense.com', // Replace with admin email
+			from: '"VSense Technologies" <vsense.tech@gmail.com>',
+			to: 'sumithsbhatt@gmail.com', // Replace with admin email
 			subject: 'New Contact Form Submission',
 			html: `
 				<h2>New Contact Form Submission</h2>
