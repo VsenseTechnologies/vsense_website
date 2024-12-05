@@ -1,9 +1,9 @@
 export const team = [
 	{
 		name: 'Kiran Kashyap M',
-		role: 'Director',
+		role: 'Director of Marketing',
 		image: '/images/team/kiran.png',
-		description: 'Visionary leader with 15+ years of experience in technology innovation.',
+		description: '',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/kiran-kashyap-112884227/',
 			twitter: '#'
@@ -11,9 +11,9 @@ export const team = [
 	},
 	{
 		name: 'Shubhanga C S',
-		role: 'Director',
+		role: 'Director of Design & Quality Assurence',
 		image: '/images/team/shubhanga.jpg',
-		description: 'Operations expert specializing in scaling technology companies.',
+		description: '',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/shubhanga-cs-595858227/',
 			twitter: '#'
@@ -21,9 +21,9 @@ export const team = [
 	},
 	{
 		name: 'Sumith K S',
-		role: 'Director',
+		role: 'Director of Operation',
 		image: '/images/team/sumith.png',
-		description: 'Technical architect with expertise in IoT and cloud solutions.',
+		description: '',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/sumith-k-s-3b893a240/',
 			twitter: '#'
@@ -31,9 +31,9 @@ export const team = [
 	},
 	{
 		name: 'Gowtham M A',
-		role: 'Director',
+		role: 'Director of Technology',
 		image: '/images/team/gowtham.jpg',
-		description: 'Creative mind behind our innovative product designs.',
+		description: '',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/gowtham-ma-948855227/',
 			twitter: '#'
@@ -41,9 +41,9 @@ export const team = [
 	},
 	{
 		name: 'Sathwik K D',
-		role: 'Director',
+		role: 'Director of Technology & Media',
 		image: '/images/team/sathwik.jpg',
-		description: 'Digital marketing specialist driving our online presence.',
+		description: '',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/sathwik-kd-158488226/',
 			twitter: '#'
@@ -51,9 +51,9 @@ export const team = [
 	},
 	{
 		name: 'Srujan K M',
-		role: 'Director',
+		role: 'Director of Technology & Services',
 		image: '/images/team/srujan.jpg',
-		description: 'Digital marketing specialist driving our online presence.',
+		description: '',
 		social: {
 			linkedin: 'https://www.linkedin.com/in/srujan-km-12s/',
 			twitter: '#'

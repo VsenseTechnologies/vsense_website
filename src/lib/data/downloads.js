@@ -23,7 +23,7 @@ export const downloads = {
 			description: 'Real time data monitoring for rice mill driers',
 			platform: 'Android',
 			icon: '📱',
-			playStoreUrl: 'https://play.google.com/store/apps/details?id=com.ludo.king&pcampaignid=web_share',
+			playStoreUrl: '',
 			features: [
 				'Real-time monitoring',
 				'Cloud Backup',
