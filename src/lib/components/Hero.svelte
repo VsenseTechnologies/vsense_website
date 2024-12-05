@@ -2,9 +2,9 @@
 	import { fade, fly } from 'svelte/transition';
 
 	let images = [
-		'/src/lib/images/banner6.jpg',
-		'/src/lib/images/banner7.jpg',
-		'/src/lib/images/banner3.jpg'
+		'/images/banner6.jpg',
+		'/images/banner7.jpg',
+		'/images/banner3.jpg'
 	];
 	let currentImageIndex = 0;
 

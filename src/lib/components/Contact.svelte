@@ -52,7 +52,7 @@
 				<div class="space-y-4">
 					<div class="flex items-center">
 						<span class="text-green-500 mr-4">📍</span>
-						<span>123 Tech Street, Innovation City</span>
+						<span>Shobhavana campus, moodbidri, DK</span>
 					</div>
 					<div class="flex items-center">
 						<span class="text-green-500 mr-4">📧</span>

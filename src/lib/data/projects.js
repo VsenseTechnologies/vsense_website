@@ -21,9 +21,9 @@ export const projects = [
 			'Node.js Backend'
 		],
 		images: [
-			'/src/lib/images/skf1.jpg',
-			'/src/lib/images/skf2.jpg',
-			'/src/lib/images/skf3.jpg'
+			'/images/skf1.jpg',
+			'/images/skf2.jpg',
+			'/images/skf3.jpg'
 		],
 		results: [
 			'40% reduction in downtime',
@@ -54,9 +54,9 @@ export const projects = [
 			'API Integration'
 		],
 		images: [
-			'/src/lib/images/bio1.png',
-			'/src/lib/images/bio2.png',
-			'/src/lib/images/bio3.png'
+			'/images/bio1.png',
+			'/images/bio2.png',
+			'/images/bio3.png'
 		],
 		results: [
 			'99.9% accuracy in attendance tracking',
