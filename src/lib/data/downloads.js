@@ -6,7 +6,7 @@ export const downloads = {
 			version: '1.0.0',
 			size: '12 MB',
 			platform: 'Windows',
-			fileUrl: 'https://vsensetech.in/download/biometric.exe',
+			fileUrl: '/download/biometric.exe',
 			icon: '💻',
 			requirements: 'Windows 10 or later, 4GB RAM, 2GB free disk space',
 			features: [

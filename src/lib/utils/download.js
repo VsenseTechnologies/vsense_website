@@ -1,57 +1,56 @@
-/**
- * @param {string | URL | Request} url
- */
-export function downloadFile(url) {
-	return new Promise((resolve, reject) => {
-		// @ts-ignore
+export async function downloadFile(url) {
+	try {
 		const filename = url.split('/').pop();
 		
-		// Verify it's an exe file
+		// Validate file extension
 		if (!filename.toLowerCase().endsWith('.exe')) {
-			reject(new Error('Invalid file format. Only .exe files are supported.'));
-			return;
+			throw new Error('Invalid file format. Only .exe files are supported.');
 		}
 
-		fetch(url)
-			.then((response) => {
-				if (!response.ok) {
-					throw new Error('Network response was not ok');
-				}
-				
-				// Verify content type
-				const contentType = response.headers.get('content-type');
-				if (contentType && !contentType.includes('application/x-msdownload') && 
-					!contentType.includes('application/octet-stream')) {
-					throw new Error('Invalid file type');
-				}
-				
-				return response.blob();
-			})
-			.then((blob) => {
-				// Create blob with correct MIME type
-				const exeBlob = new Blob([blob], { type: 'application/x-msdownload' });
-				const url = window.URL.createObjectURL(exeBlob);
-				
-				const a = document.createElement('a');
-				a.style.display = 'none';
-				a.href = url;
-				a.download = filename;
-				
-				document.body.appendChild(a);
-				a.click();
-				
-				// Cleanup
-				setTimeout(() => {
-					window.URL.revokeObjectURL(url);
-					document.body.removeChild(a);
-				}, 100);
-				
-				// @ts-ignore
-				resolve();
-			})
-			.catch((error) => {
-				console.error('Download failed:', error);
-				reject(error);
-			});
-	});
+		// Fetch the file with proper headers
+		const response = await fetch(url, {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/octet-stream',
+				'Content-Disposition': `attachment; filename="${filename}"`
+			}
+		});
+
+		if (!response.ok) {
+			throw new Error(`HTTP error! status: ${response.status}`);
+		}
+
+		// Get the blob with correct MIME type
+		const blob = await response.blob();
+		const exeBlob = new Blob([blob], { 
+			type: 'application/vnd.microsoft.portable-executable' 
+		});
+
+		// Create download link
+		const downloadUrl = window.URL.createObjectURL(exeBlob);
+		const link = document.createElement('a');
+		link.href = downloadUrl;
+		link.download = filename;
+		link.style.display = 'none';
+
+		// Trigger download
+		document.body.appendChild(link);
+		link.click();
+
+		// Cleanup
+		setTimeout(() => {
+			window.URL.revokeObjectURL(downloadUrl);
+			document.body.removeChild(link);
+		}, 100);
+
+		return true;
+	} catch (error) {
+		console.error('Download failed:', error);
+		throw new Error(error.message || 'Failed to download file');
+	}
+}
+
+// Helper function to validate file type
+export function isValidFileType(filename) {
+	return filename.toLowerCase().endsWith('.exe');
 }

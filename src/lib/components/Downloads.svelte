@@ -12,7 +12,7 @@
 	let currentSoftware = null;
 
 	/**
-	 * @param {{ name: string; description: string; version: string; size: string; platform: string; fileUrl: string; icon: string; requirements: string; features: string[]; } | null} software
+	 * @param {{ name: string; description: string; version: string; size: string; platform: string; fileUrl: string; icon: string; requirements: string; features: string[]; }} software
 	 */
 	async function handleDownload(software) {
 		if (downloading) return;
@@ -21,10 +21,19 @@
 			downloading = true;
 			currentSoftware = software;
 			error = '';
-			// @ts-ignore
+
+			// First make a request to our API endpoint
+			const response = await fetch(`/api/download?file=${encodeURIComponent(software.fileUrl)}`);
+			
+			if (!response.ok) {
+				const data = await response.json();
+				throw new Error(data.error || 'Failed to initiate download');
+			}
+
 			await downloadFile(software.fileUrl);
 		} catch (err) {
 			error = err.message || 'Download failed. Please try again later.';
+			console.error('Download error:', err);
 		} finally {
 			downloading = false;
 			currentSoftware = null;
