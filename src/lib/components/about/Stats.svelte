@@ -30,7 +30,7 @@
 </script>
 
 <div id="stats-section" class="bg-gradient-to-r from-green-500/10 via-green-500/5 to-transparent rounded-xl p-8 transform hover:scale-105 transition-all duration-300">
-	<h4 class="text-xl font-semibold mb-6 text-center">Our rowth Journey</h4>
+	<h4 class="text-xl font-semibold mb-6 text-center">Our Growth Journey</h4>
 	<div class="grid grid-cols-2 gap-6">
 		{#each stats as stat}
 			<div class="text-center group cursor-pointer">
