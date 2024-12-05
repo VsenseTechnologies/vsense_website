@@ -1,43 +1,58 @@
 <script>
 	let formData = {
-		name: '',
-		email: '',
-		message: ''
+	  name: '',
+	  email: '',
+	  message: ''
 	};
 	let isSubmitting = false;
 	let showSuccess = false;
 	let errorMessage = '';
-
+  
 	async function handleSubmit() {
-		try {
-			isSubmitting = true;
-			errorMessage = '';
-
-			const response = await fetch('/api/contact', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify(formData)
-			});
-
-			const result = await response.json();
-
-			if (!response.ok) {
-				throw new Error(result.message || 'Failed to send message');
-			}
-
-			showSuccess = true;
-			formData = { name: '', email: '', message: '' };
-			setTimeout(() => showSuccess = false, 3000);
-		} catch (error) {
-			// @ts-ignore
-			errorMessage = error.message;
-		} finally {
-			isSubmitting = false;
+	  try {
+		isSubmitting = true;
+		errorMessage = '';
+  
+		// Validate form data before sending
+		if (!formData.name || !formData.email || !formData.message) {
+		  errorMessage = 'All fields are required.';
+		  isSubmitting = false;
+		  return;
 		}
+  
+		const response = await fetch('/api/contact', {
+		  method: 'POST',
+		  headers: {
+			'Content-Type': 'application/json'
+		  },
+		  body: JSON.stringify(formData)
+		});
+  
+		// If response is not in JSON format, handle it
+		let result;
+		try {
+		  result = await response.json();
+		} catch (error) {
+		  throw new Error('Failed to parse server response');
+		}
+  
+		if (!response.ok) {
+		  throw new Error(result.message || 'Failed to send message');
+		}
+  
+		showSuccess = true;
+		formData = { name: '', email: '', message: '' };
+  
+		// Hide success message after 3 seconds
+		setTimeout(() => showSuccess = false, 3000);
+	  } catch (error) {
+		// @ts-ignore
+		errorMessage = error.message;
+	  } finally {
+		isSubmitting = false;
+	  }
 	}
-</script>
+  </script>
 
 <section id="contact" class="py-20">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
