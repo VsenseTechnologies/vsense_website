@@ -1,4 +1,5 @@
 <script>
+	// @ts-ignore
 	import { slide } from 'svelte/transition';
 	
 	let isMenuOpen = false;
@@ -12,7 +13,8 @@
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="flex justify-between h-16">
 			<div class="flex items-center ">
-				<img src="/src/lib/images/logo3.png" alt="VSense Technologies" class="h-16 " />
+				<img src="/images/logo3.png" alt="VSense Technologies" class="h-16" />
+
 
 				<span class="text-lg md:text-xl font-thin text-white font-sans">V S E N S E</span>
 			</div>

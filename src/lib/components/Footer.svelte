@@ -3,7 +3,7 @@
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 			<div>
 				<div class="flex items-center space-x-3 mb-4">
-					<img src="/src\lib\images\logo3.png" alt="VSense Technologies" class="h-10 w-auto" />
+					<img src="/images/logo3.png" alt="VSense Technologies" class="h-10 w-auto" />
 					<h3 class="text-xl font-bold">VSense Technologies</h3>
 				</div>
 				<p class="text-zinc-400">
