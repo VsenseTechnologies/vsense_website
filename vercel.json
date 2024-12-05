@@ -1,0 +1,14 @@
+{
+    "headers": [
+      {
+        "source": "/files/(.*).exe",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-msdownload"
+          }
+        ]
+      }
+    ]
+  }
+  
