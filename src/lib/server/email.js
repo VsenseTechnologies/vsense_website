@@ -1,14 +1,20 @@
 import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+
+dotenv.config(); // Ensure this is called early in the file
 
 const transporter = nodemailer.createTransport({
-	host: 'smtp.gmail.com', // Replace with your SMTP server
-	port: 587,
-	secure: false,
-	auth: {
-		user: 'sumithsbhatt@gmail.com', // Replace with your email
-		pass: 'bwxhjqihixytxoqi' // Replace with your password
-	}
+    host: process.env.SMTP_HOST,
+    port: parseInt(process.env.SMTP_PORT, 10), // Ensure this is an integer
+    secure: false, // Use true for port 465
+    auth: {
+        user: process.env.SMTP_USER, // Gmail username or email
+        pass: process.env.SMTP_PASS, // Gmail app password
+    },
 });
+
+export default transporter;
+
 
 export async function sendContactNotification(contact) {
 	try {
