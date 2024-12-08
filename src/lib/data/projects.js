@@ -11,14 +11,14 @@ export const projects = [
 			'Advanced data analytics dashboard',
 			'Predictive maintenance algorithms',
 			'Mobile-responsive interface',
-			'Custom alert system'
+			
 		],
 		technologies: [
 			'Industrial IoT Sensors',
 			'PLC Integration',
 			'MQTT Protocol',
-			'React.js Dashboard',
-			'Node.js Backend'
+			'SvelteKit Dashboard',
+			'Rust & Go Backend'
 		],
 		images: [
 			'/images/skf1.jpg',
