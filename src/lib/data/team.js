@@ -1,7 +1,27 @@
 export const team = [
 	{
+		name: 'Mr. Vivek Alva',
+		role: 'Chief Patron',
+		image: '/images/team/viveksir.jpeg',
+		description: '',
+		social: {
+			linkedin: 'https://www.linkedin.com/in/kiran-kashyap-112884227/',
+			twitter: '#'
+		}
+	},
+	{
+		name: 'Dr. Guruprasad B',
+		role: 'Faculty Interim Manager',
+		image: '/images/team/gurusir.jpeg',
+		description: '',
+		social: {
+			linkedin: 'https://www.linkedin.com/in/kiran-kashyap-112884227/',
+			twitter: '#'
+		}
+	},
+	{
 		name: 'Kiran Kashyap M',
-		role: 'Director of Marketing',
+		role: 'Marketing Head & Company Relationship Manager',
 		image: '/images/team/kiran.png',
 		description: '',
 		social: {
@@ -11,7 +31,7 @@ export const team = [
 	},
 	{
 		name: 'Shubhanga C S',
-		role: 'Director of Design & Quality Assurence',
+		role: 'Design Head & Quality Assurence Manager',
 		image: '/images/team/shubhanga.jpg',
 		description: '',
 		social: {
@@ -21,7 +41,7 @@ export const team = [
 	},
 	{
 		name: 'Sumith K S',
-		role: 'Director of Operation',
+		role: 'Chief Operational Manager',
 		image: '/images/team/sumith.png',
 		description: '',
 		social: {
@@ -31,7 +51,7 @@ export const team = [
 	},
 	{
 		name: 'Gowtham M A',
-		role: 'Director of Technology',
+		role: 'Chief Technical Manager',
 		image: '/images/team/gowtham.jpg',
 		description: '',
 		social: {
@@ -41,7 +61,7 @@ export const team = [
 	},
 	{
 		name: 'Sathwik K D',
-		role: 'Director of Technology & Media',
+		role: 'Developer & Media Officer',
 		image: '/images/team/sathwik.jpg',
 		description: '',
 		social: {
@@ -51,7 +71,7 @@ export const team = [
 	},
 	{
 		name: 'Srujan K M',
-		role: 'Director of Technology & Services',
+		role: 'Developer & Product Resource Manager',
 		image: '/images/team/srujan.jpg',
 		description: '',
 		social: {
