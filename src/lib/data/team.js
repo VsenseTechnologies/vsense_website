@@ -5,7 +5,7 @@ export const team = [
 		image: '/images/team/viveksir.jpeg',
 		description: '',
 		social: {
-			linkedin: 'https://www.linkedin.com/in/kiran-kashyap-112884227/',
+			linkedin: 'https://www.linkedin.com/in/vivek-alva-07b5213/',
 			twitter: '#'
 		}
 	},
@@ -15,7 +15,7 @@ export const team = [
 		image: '/images/team/gurusir.jpeg',
 		description: '',
 		social: {
-			linkedin: 'https://www.linkedin.com/in/kiran-kashyap-112884227/',
+			linkedin: '',
 			twitter: '#'
 		}
 	},
