@@ -3,7 +3,7 @@
 </script>
 
 <div 
-	class="relative bg-zinc-900 rounded-xl p-6 transition-all duration-300 hover:bg-zinc-800 hover:scale-105 hover:shadow-lg"
+	class="relative bg-zinc-900 rounded-xl p-6 transition-all duration-300 hover:bg-zinc-800 hover:scale-105 hover:shadow-lg w-full h-[420px] flex flex-col"
 >
 	<div class="flex flex-col items-center text-center">
 		<!-- Profile Image -->
@@ -16,7 +16,7 @@
 		</div>
 
 		<!-- Name and Details Section -->
-		<div class="rounded-xl p-4">
+		<div class="rounded-xl p-4  w-full h-[120px] flex flex-col ">
 			<h3 class="text-xl font-bold mb-1 text-white">
 				{member.name}
 			</h3>
@@ -27,7 +27,7 @@
 		</div>
 
 		<!-- Social Links -->
-		<div class="flex space-x-4">
+		<div class="flex space-x-4 p-3">
 			<a
 				href={member.social.linkedin}
 				class="text-zinc-400 p-2 rounded-full hover:text-green-400 hover:bg-zinc-700"

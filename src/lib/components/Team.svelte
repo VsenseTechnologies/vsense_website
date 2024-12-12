@@ -1,7 +1,7 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
 	import { team } from '$lib/data/team.js';
-	import TeamMemberCard from './team/TeamMemberCard.svelte';
+	import TeamMemberCard from './TeamMemberCard.svelte';
 	import SectionTitle from './SectionTitle.svelte';
 </script>
 
