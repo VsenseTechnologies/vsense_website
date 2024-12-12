@@ -10,6 +10,6 @@
 	<img
 		{src}
 		{alt}
-		class="w-full h-full object-cover rounded-full border-2 border-zinc-800 group-hover:border-green-500 transition-colors duration-300"
+		class="w-full h-full object-cover rounded-full border-2 border-zinc-800 transition-colors duration-300"
 	/>
 </div>
