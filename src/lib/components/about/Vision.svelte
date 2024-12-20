@@ -37,14 +37,14 @@
 				<span class="text-3xl">🚀</span>
 				<h4 class="text-xl font-semibold text-green-500">Our Mission</h4>
 			</div>
-			<p class="text-zinc-400 leading-relaxed">
-				To develop cutting-edge technological solutions that integrate seamlessly into institutional and industrial ecosystems.
-				To prioritize quality and reliability in every product and service, ensuring exceptional customer experiences.
-				To harness the power of IoT and cloud-based technologies for real-time, scalable, and efficient solutions.
-				To foster innovation that addresses real-world challenges, creating value for businesses across all scales.
-				To maintain a commitment to sustainability and adaptability in all technological advancements
-
-			</p>
+			<ul class="text-zinc-400 leading-relaxed list-disc ml-5">
+				<li>To develop cutting-edge technological solutions that integrate seamlessly into institutional and industrial ecosystems.</li>
+				<li>To prioritize quality and reliability in every product and service, ensuring exceptional customer experiences.</li>
+				<li>To harness the power of IoT and cloud-based technologies for real-time, scalable, and efficient solutions.</li>
+				<li>To foster innovation that addresses real-world challenges, creating value for businesses across all scales.</li>
+				<li>To maintain a commitment to sustainability and adaptability in all technological advancements.</li>
+			  </ul>
+			  
 		</div>
 	{/if}
 </div>
