@@ -27,8 +27,8 @@
 				<h4 class="text-xl font-semibold text-green-500">Our Vision</h4>
 			</div>
 			<p class="text-zinc-400 leading-relaxed">
-				To become a leading force in technological innovation, making advanced solutions accessible 
-				to businesses of all sizes while fostering sustainable growth and digital transformation.
+				To drive innovation and create a meaningful difference in existing and future technologies by delivering high-quality
+				 products and services with enhanced product life, ensuring customer satisfaction at every step.
 			</p>
 		</div>
 	{:else}
@@ -38,8 +38,12 @@
 				<h4 class="text-xl font-semibold text-green-500">Our Mission</h4>
 			</div>
 			<p class="text-zinc-400 leading-relaxed">
-				To deliver innovative, sustainable, and cost-effective technology solutions that empower 
-				businesses to thrive in the digital age through cutting-edge IoT, Robotics, and Automation solutions.
+				To develop cutting-edge technological solutions that integrate seamlessly into institutional and industrial ecosystems.
+				To prioritize quality and reliability in every product and service, ensuring exceptional customer experiences.
+				To harness the power of IoT and cloud-based technologies for real-time, scalable, and efficient solutions.
+				To foster innovation that addresses real-world challenges, creating value for businesses across all scales.
+				To maintain a commitment to sustainability and adaptability in all technological advancements
+
 			</p>
 		</div>
 	{/if}
