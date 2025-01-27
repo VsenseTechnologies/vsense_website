@@ -22,7 +22,7 @@
 						Innovating Tomorrow's Solutions Today
 					</h3>
 					<p class="text-zinc-400 leading-relaxed">
-						VSense Technologies bridges the gap between cutting-edge technology and practical business solutions. 
+						Vithsutra Technologies bridges the gap between cutting-edge technology and practical business solutions. 
 						We bring fresh perspectives and innovative approaches to the tech industry, focusing on IoT, Robotics, 
 						and Industrial Automation.
 					</p>

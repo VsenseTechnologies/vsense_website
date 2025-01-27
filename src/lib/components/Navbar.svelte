@@ -39,7 +39,7 @@
 	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="flex justify-between h-16">
 			<div class="flex items-center space-x-3">
-				<img src="/images/logo3.png" alt="VSense Technologies" class="h-16" />
+				<img src="/images/1737903665523.jpeg" alt="Vithsutra Technologies" class="h-16" />
 
 				<span class="text-lg md:text-xl font-bold text-white">VSense Technologies</span>
 			</div>

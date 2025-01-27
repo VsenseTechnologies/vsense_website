@@ -3,8 +3,8 @@
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 			<div>
 				<div class="flex items-center space-x-3 mb-4">
-					<img src="/images/logo3.png" alt="VSense Technologies" class="h-10 w-auto" />
-					<h3 class="text-xl font-bold">VSense Technologies</h3>
+					<img src="/images/1737903665523.jpeg" alt="Vithsutra Technologies" class="h-10 w-auto" />
+					<h3 class="text-xl font-bold">Vithsutra Technologies</h3>
 				</div>
 				<p class="text-zinc-400">
 					Innovating for a better tomorrow through technology and expertise.
@@ -46,7 +46,7 @@
 			</div>
 		</div>
 		<div class="mt-8 pt-8 border-t border-zinc-800 text-center text-zinc-400">
-			<p>&copy; 2024 VSense Technologies. All rights reserved.</p>
+			<p>&copy; 2025 Vithsutra Technologies. All rights reserved.</p>
 		</div>
 	</div>
 </footer>
