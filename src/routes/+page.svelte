@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>VSense Technologies - Innovative Technology Solutions</title>
+	<title>Vithsutra Technologies - Innovative Technology Solutions</title>
 	<meta name="description" content="Leading provider of IoT, Robotics, Web Development, and Industrial Solutions" />
 </svelte:head>
 
