@@ -41,7 +41,7 @@
 			<div class="flex items-center space-x-3">
 				<img src="/images/1737903665523.jpeg" alt="Vithsutra Technologies" class="h-16" />
 
-				<span class="text-lg md:text-xl font-bold text-white">VSense Technologies</span>
+				<span class="text-lg md:text-xl font-bold text-white">Vithsutra Technologies</span>
 			</div>
 			
 			<div class="hidden md:flex items-center space-x-6 lg:space-x-8">

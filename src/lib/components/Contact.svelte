@@ -71,7 +71,7 @@
 					</div>
 					<div class="flex items-center">
 						<span class="text-green-500 mr-4">📧</span>
-						<span>vsense.tech@gmail.com</span>
+						<span>Vithsutra.tech@gmail.com</span>
 					</div>
 					<div class="flex items-center">
 						<span class="text-green-500 mr-4">📱</span>
