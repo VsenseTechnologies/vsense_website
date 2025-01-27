@@ -3,7 +3,7 @@
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 			<div>
 				<div class="flex items-center space-x-3 mb-4">
-					<img src="/images/1737903665523.jpeg" alt="Vithsutra Technologies" class="h-10 w-auto" />
+					<img src="/images/logonew.png" alt="Vithsutra Technologies" class="h-10 w-auto" />
 					<h3 class="text-xl font-bold">Vithsutra Technologies</h3>
 				</div>
 				<p class="text-zinc-400">
