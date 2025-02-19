@@ -75,7 +75,7 @@
 					</div>
 					<div class="flex items-center">
 						<span class="text-green-500 mr-4">📱</span>
-						<span>+91 8277479799</span>
+						<span>+91 9113068170</span>
 					</div>
 				</div>
 			</div>
